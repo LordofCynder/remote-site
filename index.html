@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" contet="width=device-width, initial-scale=1.0">
+        <title>Infotech</title>
+        <link rel="icon" type="image/x-icon" href="capa.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+   </head>
+
+   <body>
+       <header>
+            <div class="container">
+                <img src="./images/baner.png" alt="logo">
+                <div class="menu-section">
+                    <div class="container-menu">
+                    <input type="checkbox" id="checkbox-menu">
+                    <label for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Artigos</a>
+                        </li>
+                        <li>
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+        <div class="container-main">
+            <div>
+                <h2><span>Inscreva-se agora</span></h2>
+                <h2>na Newsletter</h2>
+                <h3>
+                    Provocando novos começos com um conhecimento transformador na 
+                    velocidade do AGORA!
+                </h3>
+                <form class="form">
+                    <input type="text" placeholder="Nome de usuário">
+                    <input type="email" placeholder="E-mail de cadastro">
+                    <input type="password" placeholder="Crie a sua senha">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <img src="./images/register.webp" alt="">
+        </div>
+        </main>
+        <section class="cards">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/fortuna.jpg">
+                </div>
+            <div class="content">
+                <p class="title text--medium">
+                    Com startups mais 'baratas', grandes empresas buscam aquisições e maiores influências. Com funcionários sem problemas financeiros, a produtividade e a qualidade aumentam.
+                </p>
+                <div class="info">
+                    <p class="text">Há 21 min</p>
+                </div>
+            </div> 
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./images/emote.gif">
+            </div>
+    
+            <div class="content">
+                <p class="title text--medium">
+                    A avalanche de dados e a utilização de algoritmos na tomada de decisão tornaram-se cada vez mais presentes na rotina das companhias.
+                </p>
+                <div class="info">
+                    <p class="text">Há 32 min</p>
+                </div>
+            </div> 
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./images/filme.jpeg">
+            </div>
+    
+            <div class="content">
+                <p class="title text--medium">
+                    A indústria do cinema movimenta 25 bilhões de reais ao ano, uma fatia equivalente a 0,46% do PIB brasileiro, seja em produções ou em bilheterias.
+                </p>
+                <div class="info">
+                    <p class="text">Há 45 min</p>
+                </div>
+            </div> 
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./images/jogos.webp">
+            </div>
+    
+            <div class="content">
+                <p class="title text--medium">
+                    O mercado de 'games' teve seu crescimento impulsionado durante a pandemia de Covid-19. Segundo a TechNet Immersive, essa indústria está avaliada em cerca de US$ 152 bilhões. 
+                </p>
+                <div class="info">
+                    <p class="text">Há 58 min</p>
+                </div>
+            </div> 
+        </div>
+       </section>
+       <section>
+            <div class="contatos" id="contato">Área de contato</div>
+       </section>
+       <section class="cards">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    <div>
+                        <label for="nome" class="obrigatorio">Nome*:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                        
+                    </div>
+                    <div class="barra">
+                        <label for="email" class="obrigatorio">E-mail*:</label>
+                        <input type="mail" name="email" id="email" placeholder="Insira o seu e-mail">
+                        <label for="numero">Número fixo:</label>
+                        <input type="number" id="telefone" name="telefone" placeholder="Telefone convencional">
+                        <label for="phone">Número particular:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Telefone celular">
+                        <label for="senha">Deseja alterar sua senha?</label>
+                        <input type="password" id="pass" name="password" minlenght="8" maxlength="13" required placeholder="Digite a sua nova senha">
+                        <label for="aniversario">Data de nascimento:</label>
+                        <input type="date" id="aniversario" name="aniversario" value="submit" min="1960-01-01" max="2003-12-31">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="assunto" class="obrigatorio">Assunto*:</label>
+                    <select name="assunto" id="assunto" required>
+                        <option value="" selected></option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="duvida">Dúvidas</option>
+                        <option value="outro">Outro...</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensagem" class="obrigatorio">Mensagem*:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem..." required></textarea>
+                </div>
+                <div class="cadastro">
+                    <input type="checkbox" name="cadastro" id="cadastro">
+                    <label for="cadastro">Clique aqui para receber E-mails informativos</label>
+                </div>
+                <div class="cadastro">
+                    <input type="submit" value="Enviar mensagem">
+                </div>
+            </form>
+       </section>
+    </body>
+</html>
